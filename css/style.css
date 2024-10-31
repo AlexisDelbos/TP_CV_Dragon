@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 200px;
+    text-align: center;
+    padding-right: 20px;
+    border-right: 2px solid #f0f0f0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.851), rgba(248, 248, 248, 0.8)), url("/assets/dragon-chinois_54199-200.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+h1,
+h2 {
+    color: #3d5a80;
+}
+
+.header h1 {
+    font-size: 2em;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.experience-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-details h3 {
+    margin: 0;
+    color: #333;
+}
+
+.experience-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.skill-level {
+    background-color: #3d5a80;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.skill-bar {
+    height: 100%;
+    background-color: #98c1d9;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        padding: 10px 0;
+        border-right: none;
+        border-bottom: 2px solid #f0f0f0;
+    }
+    .content {
+        padding-left: 0;
+    }
+    .photo {
+        width: 110px;
+        height: 110px;
+    }
+    .experience-image {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .header h1 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+    .sidebar {
+        width: 100%;
+        padding: 10px 0;
+        border-right: none;
+        border-bottom: 2px solid #f0f0f0;
+    }
+    .content {
+        padding: 0;
+    }
+    .experience-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .experience-image {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+    }
+    .experience-details {
+        flex: 1;
+    }
+    .experience-details h3 {
+        font-size: 1em;
+        margin: 0;
+    }
+    .experience-details p {
+        font-size: 0.9em;
+        margin: 3px 0;
+    }
+}
